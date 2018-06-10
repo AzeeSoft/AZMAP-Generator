@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #333;" stylesheets="@../../../../../../../../../Seamless%20Timecard/src/com/mumtaziz/seamlesstimecard/res/css/root.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.azeesoft.mapdatagenerator.java.controllers.dialogs.DuplicateDialogController">
+   <children>
+      <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <VBox prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefWidth="200.0" style="-fx-background-color: #d3324d;">
+                     <children>
+                        <Label text="Duplicates Found" textFill="WHITE">
+                           <font>
+                              <Font name="QuicksandBold-Regular" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                  </HBox>
+                  <VBox fx:id="duplicateNamesContainer">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefWidth="200.0" style="-fx-background-color: #2b2b2b;">
+                           <children>
+                              <Label text="Two more more placemarks have these names" textFill="WHITE">
+                                 <font>
+                                    <Font name="QuicksandBold-Regular" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <VBox fx:id="duplicateNamesVB" prefWidth="100.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="duplicateCoordinatesContainer">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefWidth="200.0" style="-fx-background-color: #2b2b2b;">
+                           <children>
+                              <Label text="Two more more placemarks have these coordinates" textFill="WHITE">
+                                 <font>
+                                    <Font name="QuicksandBold-Regular" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <VBox fx:id="duplicateCoordinatesVB" prefWidth="100.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

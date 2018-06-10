@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.azeesoft.mapdatagenerator.java.controllers.CreateAZMAPWindowController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton onAction="#newAZMAP" prefWidth="200.0" ripplerFill="#0000003f" style="-fx-background-color: #14bc8d;" text="New AZMAP" textFill="WHITE">
+               <font>
+                  <Font name="QuicksandBold-Regular" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#openAZMAP" prefWidth="200.0" ripplerFill="#0000003f" style="-fx-background-color: #3e76d1;" text="Open AZMAP" textFill="WHITE">
+               <font>
+                  <Font name="QuicksandBold-Regular" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

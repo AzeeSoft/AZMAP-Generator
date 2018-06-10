@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.azeesoft.mapdatagenerator.java.controllers.dialogs.EditPlacemarkDialogController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefWidth="200.0" style="-fx-background-color: #1f5fc6;">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <Label text="Edit Placemark" textFill="WHITE">
+                     <font>
+                        <Font name="QuicksandBold-Regular" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ScrollPane fitToWidth="true" prefHeight="200.0" prefWidth="200.0" stylesheets="@../../css/root.css" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <content>
+                  <VBox prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <VBox style="-fx-background-color: #1d498e;">
+                           <children>
+                              <HBox prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Name:" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="nameLabel" text="Southern Arkansas University" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Description:" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="descriptionLabel" text="Southern Arkansas University" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Latitude:" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="latitudeLabel" text="-93.632682" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="Longitude:" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="longitudeLabel" text="36.746272" textFill="WHITE">
+                                       <font>
+                                          <Font name="QuicksandBold-Regular" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <HBox prefWidth="200.0" style="-fx-background-color: #2c2c2c;">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <Label text="Placemark Info" textFill="WHITE">
+                                             <font>
+                                                <Font name="QuicksandBold-Regular" size="16.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox prefWidth="200.0" spacing="15.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <JFXComboBox fx:id="placemarkTypeCB" focusColor="#4784e5" labelFloat="true" prefWidth="300.0" promptText="Placemark Type" style="-fx-font-size: 16px;">
+                                             <HBox.margin>
+                                                <Insets top="10.0" />
+                                             </HBox.margin>
+                                          </JFXComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefWidth="200.0" spacing="15.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <JFXComboBox fx:id="placemarkSubtypeCB" focusColor="#4784e5" labelFloat="true" prefWidth="300.0" promptText="Placemark Subtype" style="-fx-font-size: 16px;">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </JFXComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefWidth="200.0" spacing="15.0">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <children>
+                                          <JFXTextArea fx:id="lookupTermTA" focusColor="#4784e5" labelFloat="true" prefRowCount="2" promptText="Lookup Terms" style="-fx-text-fill: #eee;" HBox.hgrow="ALWAYS">
+                                             <font>
+                                                <Font name="QuicksandBold-Regular" size="16.0" />
+                                             </font>
+                                          </JFXTextArea>
+                                       </children>
+                                    </HBox>
+                                    <VBox>
+                                       <children>
+                                          <HBox prefWidth="200.0" style="-fx-background-color: #2c2c2c;">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <children>
+                                                <AnchorPane HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Label text="Info Object" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                         <font>
+                                                            <Font name="QuicksandBold-Regular" size="16.0" />
+                                                         </font>
+                                                      </Label>
+                                                   </children>
+                                                </AnchorPane>
+                                                <JFXButton onAction="#addInfoObjectRow" style="-fx-background-color: #4784e5;" text="Add" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="QuicksandBold-Regular" size="14.0" />
+                                                   </font>
+                                                </JFXButton>
+                                             </children>
+                                          </HBox>
+                                          <GridPane fx:id="infoObjectsGP" hgap="20.0" vgap="30.0">
+                                            <columnConstraints>
+                                              <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="10.0" prefWidth="300.0" />
+                                              <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </GridPane>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox>
+                                 <children>
+                                    <HBox prefWidth="200.0" style="-fx-background-color: #2c2c2c;">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <children>
+                                          <AnchorPane HBox.hgrow="ALWAYS">
+                                             <children>
+                                                <Label text="Images" textFill="WHITE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <font>
+                                                      <Font name="QuicksandBold-Regular" size="16.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </AnchorPane>
+                                          <JFXButton onAction="#addNewImage" style="-fx-background-color: #4784e5;" text="Add" textFill="WHITE">
+                                             <font>
+                                                <Font name="QuicksandBold-Regular" size="14.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                    <FlowPane fx:id="imagesFP" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER_RIGHT" prefWidth="200.0" style="-fx-background-color: #242424;">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <children>
+                  <JFXButton onAction="#savePlacemark" style="-fx-background-color: #20a06b;" text="Save" textFill="WHITE">
+                     <font>
+                        <Font name="QuicksandBold-Regular" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

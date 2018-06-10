@@ -1,0 +1,115 @@
+.jfx-snackbar-toast {
+    -fx-background-color: #333;
+    -fx-font-size: 16pt;
+    -fx-text-fill: #eee;
+    -fx-padding: 10px 25px;
+}
+
+.white-radio-button {
+    -jfx-selected-color: #eee;
+    -jfx-unselected-color: #777;
+}
+
+/*Combo Box*/
+.combo-box .list-cell
+{
+    /*-fx-background: white;*/
+    -fx-background-color: transparent;
+    -fx-text-fill: #eee;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-text-fill: #333;
+    -fx-background-color: #eee, #eee;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}
+
+.combo-box-popup .list-view .list-cell
+{
+    -fx-background-color: #eee;
+    -fx-text-fill: #333;
+}
+
+.combo-box-popup .list-view .list-cell:filled
+{
+    -fx-text-fill: #333;
+    -fx-color: #333;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover
+{
+    -fx-background: #bbb;
+    -fx-background-color: #bbb;
+    -fx-text-fill: #333;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover
+{
+    -fx-background-color: #bbb;
+    -fx-text-fill: #333;
+}
+
+.combo-box-base
+{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+    -fx-background-color: transparent;
+    -fx-text-fill: #eee;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: #eee;
+}
+
+.combo-box-base:showing
+{
+    -fx-color: #eee;
+}
+
+.combo-box-base:focused {
+    /*-fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;*/
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+
+
+/*Scroll Pane*/
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-button {
+    visibility: hidden;
+}
+
+.scroll-bar .decrement-button {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track-background {
+    visibility: hidden;
+}
+
+.scroll-bar:vertical .track {
+    visibility: hidden;
+}
